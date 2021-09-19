@@ -10,4 +10,4 @@ A fent említett tárgy számára létrehozott nyilvános repository.
 
 **Szabó Dániel** - [GitHub](https://github.com/RangerFoxy)
 
-**Kalló György** - [GitHub]() 
+**Kalló György Dávid** - [GitHub](https://github.com/Windarf) 
