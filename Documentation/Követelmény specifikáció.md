@@ -1,3 +1,5 @@
+## Követelmény specifikáció
+
 # Jelenlegi helyzet
 
 A piacon nincs olyan alkalmazás, ami minden igényt egyszerre ki tudna elégíteni. 

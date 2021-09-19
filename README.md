@@ -8,6 +8,6 @@ A fent említett tárgy számára létrehozott nyilvános repository.
 
 **Duba Anita** - [GitHub]()
 
-**Szabó Dániel** - [GitHub](https://github.com/RangerFoxy)
+**Szabó Dániel József** - [GitHub](https://github.com/RangerFoxy)
 
 **Kalló György Dávid** - [GitHub](https://github.com/Windarf) 

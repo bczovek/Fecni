@@ -1,7 +1,7 @@
 # Rendszerterv
 
 ## A rendszer célja
-A startup-unk célja egy olyan webalkalmazás elkészítése, melyben a felhasználónak lehetősége van létrehoznia a saját bevásárlólistáját. Erre a listára a felhasználó tetszőleges tételeket vihet fel, melyeknek a kategóriáját is megadhatja (pl. élelmiszer, tisztítószer stb.). Továbbá a felhasználónak lehetősége van *kihúzni* tételeket a listából, illetve *lezárni/törölni* egész listákat is. 
+A startup-unk célja egy olyan webalkalmazás elkészítése, melyben a felhasználónak lehetősége van létrehoznia a saját bevásárlólistáját. Erre a listára a felhasználó tetszőleges tételeket vihet fel, melyeknek a kategóriáját is megadhatja (pl. élelmiszer, tisztítószer stb.). Továbbá a felhasználónak lehetősége van *kihúzni* tételeket a listából, illetve *lezárni/törölni* egész listákat is. Az alkalmazás különlegessé az, hogy mindemellett a felhasználó egy térképen láthatja a közelében lévő boltokat, ahonnan az adott terméket megvásárolhatja, akár útvonalat is tervezhet hozzájuk. 
 
 Az alkalmazás tervezésekor különös figyelmet szentelünk az igényes felhasználói felület megalkotására, a könnyű és intuitív használatra, valamint a praktikusságra.
 
@@ -10,11 +10,19 @@ A projekt menedzselése Trello-n keresztül történik.
 Csapattagok:
  - Czövek Bence
  - Duba Anita
- - Szabó Dániel
+ - Szabó Dániel József
  - Kalló György Dávid
  
- ## Követelmények
- 
+## Követelmények
+ |  ID |  Név  | Kifejtés |
+|:-----:|:-----:|:---------:|
+| K1  | Bevásárlólista | A felhasználó tudjon akár több bevásárlólistát létrehozni, törölni, módosítani.|
+| K2 | Listaelem | Lehetőséget kell biztosítani a felhasználónak, hogy valamennyi elemet rögzíteni tudjon az adott bevásárlólistán. Ezeknek nevet, kategóriát tudjon beállítani, kihúzni |
+| K3 | Perzisztencia | A bevásárlólisták a felhasználó igénye szerint menthető és bármikor visszatölthető legyen bármely eszközön. |
+| K4 | Térkép | Interaktív térképen megjeleníthető legyen egy adott bevásárlólista elemei hol kaphatók. Az üzletek kijelölése a listaelem kategória alapján történjen. |
+| K5 | Térkép paraméterezése | A felhasználó beállíthatja milyen távolságra lévő boltokat keres. Továbbá nyitvatartás és árkategória szerint szűrheti azokat. |
+| K6 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
+| K7 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
 
 ## Ütemterv
 ~~TODO~~	
@@ -24,16 +32,19 @@ Csapattagok:
 **Rendszer szereplők:**
 - *Felhasználó*
  - **Funckionális követelmények:**
-	 - Képes felhasználói fiókot létrehozni
-	 - Képes belépni a fiókjába
 	 - Képes új bevásárlólistát létrehozni
 	 - Képes meglévő bevásárlólistát módosítani
 	 - Képes bevásárlólistát lezárni/törölni
+	 - Képes termékeket felvenni a listára, ezekhez kategóriát is tud rendelni
+	 - Beépített térképen láthatóak a felhasználó földrajzi helyéhez legközelebb eső boltok
+	 - A megjelenített boltok az áru kategóriájától függően frissülnek
+	 - A felhasználó beállíthatja, hogy milyen távolságra jelenjenek meg boltok a térképen
+	 - A felhasználó útitervet is készíthet a kiválasztott bolthoz
 - **Nem funkcionális követelmények:**
 	- Igényes UI
 	- Firebase által kínált lehetőségek minél nagyobb kihasználása
-	- 
-	## Fizikai környezet
+
+## Fizikai környezet
 
  - Böngésző (webalkalmazás)
  - **Fejlesztői eszközök**:
