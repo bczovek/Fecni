@@ -36,3 +36,14 @@ Digitális listák:
 -	Listaelemek szerkesztésének lehetősége
 -	Ingyenes hozzáférés
 
+# Követelmény lista
+
+|  ID |  Név  | Kifejtés |
+|:-----:|:-----:|:---------:|
+| K1  | Bevásárlólista | A felhasználó tudjon akár több bevásárlólistát létrehozni, törölni, módosítani.|
+| K2 | Listaelem | Lehetőséget kell biztosítani a felhasználónak, hogy valamennyi elemet rögzíteni tudjon az adott bevásárlólistán. Ezeknek nevet, kategóriát tudjon beállítani, kihúzni |
+| K3 | Perzisztencia | A bevásárlólisták a felhasználó igénye szerint menthető és bármikor visszatölthető legyen bármely eszközön. |
+| K4 | Térkép | Interaktív térképen megjeleníthető legyen egy adott bevásárlólista elemei hol kaphatók. Az üzletek kijelölése a listaelem kategória alapján történjen. |
+| K5 | Térkép paraméterezése | A felhasználó beállíthatja milyen távolságra lévő boltokat keres. Továbbá nyitvatartás és árkategória szerint szűrheti azokat. |
+| K6 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
+| K7 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
