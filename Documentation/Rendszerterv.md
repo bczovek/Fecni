@@ -11,7 +11,7 @@ Csapattagok:
  - Czövek Bence
  - Duba Anita
  - Szabó Dániel
- - Kalló György
+ - Kalló György Dávid
  
  ## Követelmények
  
