@@ -25,7 +25,14 @@ Csapattagok:
 | K7 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
 
 ## Ütemterv
-~~TODO~~	
+- 2021.09.06. - 2021.09.12. Elkezdeni és befejezni a Követelmény Specifikációt.
+- 2021.09.13. - 2021.09.19. Elkezdeni a Funkcionális Specifikációt és a Rendszertervet. POC elkezdése, esetleges befejezése.
+- 2021.09.20. - 2021.09.26. Befejezni a Rendszertervet és a Funkcionális Specifikációt, továbbá POC fejlesztése.
+- 2021.09.27. - 2021.10.03. Google Maps API implementálás.
+
+- 2021.10.04. - 2021.10.10. ~~TODO~~
+...
+- 2021.12.06. Projekt véglegesítése, befejezése.
 
 ## Funkcionális terv
 
