@@ -66,5 +66,11 @@ Csapattagok:
 	- HTML
 	- CSS
 	- JavaScript
+	- Google Maps API
+	
+Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi igényes webalkalmazás készítésekor, ezért választottuk őket. A Google Maps API segítségével tudjuk megvalósítani a bevásárlólistánk fő funkcionalitását, a listára felvett elemek beszerzési helyét megjelenítő térképet.
+
 - **Backend**:
 	- Firebase
+	
+A Google FireBase rendkívül sok kényelmi funkcióval rendelkezik, melyek megkönnyítik a fejlesztést. Ilyenek például a kényelmes user autentikáció, az egyszerű backend karbantartás, különböző biztonsági megoldások és a valós időben frissülő adatbázis és console monitoring.
