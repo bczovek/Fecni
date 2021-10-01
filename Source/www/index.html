@@ -33,10 +33,17 @@
         
     </div>
 
-    <div id="map"></div>
+    <div id="map">
+    </div>
+    <div id="settings">
+      <label for="mapRange" class="form-label">Távolság</label>
+      <input type="range" class="form-range" min="1" max="5" id="mapRange">
+      <label for="priceRange" class="form-label">Árkategória</label>
+      <input type="range" class="form-range" min="1" max="5" id="priceRange">
+    </div>
 
     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyvNsvjis_77kNxDxqWyyhJitiZeOtJ_M&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap">
     </script>
 </body>
 </html>

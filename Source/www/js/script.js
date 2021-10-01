@@ -10,12 +10,17 @@ function displayLists(){
         $('#lists').append(`<div class="col-sm-6">
         <div class="card" style="width: 18rem;">
             <div class="card-header">
-                `+ lists[i].name +`
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control bg-light listname" id="name`+ i +`" value="`+lists[i].name+`">
+                <label for="name`+ i +`">Bevásárlólista neve</label>
+            </div>
                 <button type="button" class="btn btn-danger remove" id="`+ i +`" style="font-weight: bolder;font-size: large;float:right">🗑</button>
                 <button type="button" class="btn btn-success add" id="`+ i +`" style="font-weight: bolder;font-size: larger;float:right">+</button>
             </div>
             <div class="card-body" id="list`+ i +`">
             </div>
+            <a href="#" id="map`+ i +`" class="btn btn-success mapButton">Térkép</a>
+            <a href="#" id="save`+ i +`" class="btn btn-success saveButton">Mentés</a>
         </div>
     </div>`);
 
@@ -23,8 +28,8 @@ function displayLists(){
             $('#list'+i).append(`<div class="card bg-success text-light" style="width: 15rem;">
             <div class="card-body">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control bg-success text-light" id="floatingInput" placeholder="Új tárgy">
-                    <label for="floatingInput">Név</label>
+                    <input type="text" class="form-control bg-success text-light itemname" id="name`+ i +`-`+ j +`" value="`+lists[i].items[j].name+`">
+                    <label for="name`+ i +`-`+ j +`">Termék neve</label>
                   </div>
                 <select class="form-select" aria-label="Default select example" id="`+ i +`-`+ j +`" style="width: 8rem;float:left">
                 </select>
@@ -43,7 +48,7 @@ function displayLists(){
 
 function newList(){
     lists.push({
-        name: "Bevásárlólista",
+        name: "",
         items: []
     });
 
@@ -58,11 +63,26 @@ $(document).on('change', 'select', function(){
     lists[i].items[j].category = this.value;
 })
 
+$(document).on('change', '.listname', function(){
+    
+    let i = parseInt(this.id.slice(-1));
+    lists[i].name = this.value;
+})
+
+$(document).on('change', '.itemname', function(){
+    
+    let id = this.id.slice(-3);
+    let i = id.split('-')[0];
+    let j = id.split('-')[1];
+
+    lists[i].items[j].name = this.value;
+})
+
 $(document).on('click', '.add', function(){
     let id = this.id;
 
     lists[id].items.push({
-        name: "Új tárgy",
+        name: "",
         category: 0
     });
 
