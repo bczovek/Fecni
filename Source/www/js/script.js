@@ -41,16 +41,16 @@ function displayLists(){
         <div class="card" style="width: 18rem; margin-bottom:2%">
             <div class="card-header">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control bg-light listname" id="name`+ i +`" value="`+lists[i].name+`">
+                <input type="text" placeholder="Bevásárlólista neve" class="form-control bg-light listname" id="name`+ i +`" value="`+lists[i].name+`">
                 <label for="name`+ i +`">Bevásárlólista neve</label>
             </div>
-                <button type="button" class="btn btn-danger remove" id="`+ i +`" style="font-weight: bolder;font-size: large;float:right">🗑</button>
-                <button type="button" class="btn btn-success add" id="`+ i +`" style="font-weight: bolder;font-size: larger;float:right">+</button>
+                <button type="button" class="btn btn-danger remove" id="`+ i +`" style="font-weight: bolder;font-size: large;float:right; text-align: center; margin: 3px; width: 50px; height: 40px;">🗑</button>
+                <button type="button" class="btn btn-success add" id="`+ i +`" style="font-weight: bolder;font-size: larger;float:right; text-align: center; margin: 3px; height: 40px; width: 50px;">+</button>
             </div>
             <div class="card-body" id="list`+ i +`">
             </div>
-            <a href="#map" id="map`+ i +`" class="btn btn-success mapButton">Térkép</a>
-            <a href="#" id="save`+ i +`" class="btn btn-success saveButton">Mentés</a>
+            <a href="#map" id="map`+ i +`" class="btn btn-success mapButton" style="padding: 5px; margin: 5px;">Térkép</a>
+            <a href="#" id="save`+ i +`" class="btn btn-success saveButton" style="padding: 5px; margin: 5px;">Mentés</a>
         </div>
     </div>`);
 
@@ -58,7 +58,7 @@ function displayLists(){
             $('#list'+i).append(`<div class="card bg-success text-light" style="width: 15rem;">
             <div class="card-body">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control bg-success text-light itemname" id="name`+ i +`-`+ j +`" value="`+lists[i].items[j].name+`">
+                    <input type="text" placeholder="Termék neve" class="form-control bg-success text-light itemname" id="name`+ i +`-`+ j +`" value="`+lists[i].items[j].name+`">
                     <label for="name`+ i +`-`+ j +`">Termék neve</label>
                   </div>
                 <select class="form-select" aria-label="Default select example" id="`+ i +`-`+ j +`" style="width: 8rem;float:left">
