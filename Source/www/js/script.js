@@ -27,6 +27,30 @@ let categories = [{
 {
     name: "Cipő",
     type: "shoe_store"
+},
+{
+    name: "Könyv",
+    type: "book_store"
+},
+{
+    name: "Háztartási cikk",
+    type: "home_goods_store"
+},
+{
+    name: "Drogéria és Illatszer",
+    type: "drugstore"
+},
+{
+    name: "Virág és Szobanövény",
+    type: "florist"
+},
+{
+    name: "Bútor",
+    type: "furniture_store"
+},
+{
+    name: "Ékszer",
+    type: "jewelry_store"
 }
 ];
 
