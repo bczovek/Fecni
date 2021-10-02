@@ -18,11 +18,10 @@ Csapattagok:
 |:-----:|:-----:|:---------:|
 | K1  | Bevásárlólista | A felhasználó tudjon akár több bevásárlólistát létrehozni, törölni, módosítani.|
 | K2 | Listaelem | Lehetőséget kell biztosítani a felhasználónak, hogy valamennyi elemet rögzíteni tudjon az adott bevásárlólistán. Ezeknek nevet, kategóriát tudjon beállítani, kihúzni |
-| K3 | Perzisztencia | A bevásárlólisták a felhasználó igénye szerint menthető és bármikor visszatölthető legyen bármely eszközön. |
-| K4 | Térkép | Interaktív térképen megjeleníthető legyen egy adott bevásárlólista elemei hol kaphatók. Az üzletek kijelölése a listaelem kategória alapján történjen. |
-| K5 | Térkép paraméterezése | A felhasználó beállíthatja milyen távolságra lévő boltokat keres. Továbbá nyitvatartás és árkategória szerint szűrheti azokat. |
-| K6 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
-| K7 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
+| K3 | Térkép | Interaktív térképen megjeleníthető legyen egy adott bevásárlólista elemei hol kaphatók. Az üzletek kijelölése a listaelem kategória alapján történjen. |
+| K4 | Térkép paraméterezése | A felhasználó beállíthatja milyen távolságra lévő boltokat keres. Továbbá nyitvatartás és árkategória szerint szűrheti azokat. |
+| K5 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
+| K6 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
 
 ## Ütemterv
 - 2021.09.06. - 2021.09.12. Elkezdeni és befejezni a Követelmény Specifikációt.
@@ -30,7 +29,7 @@ Csapattagok:
 - 2021.09.20. - 2021.09.26. Befejezni a Rendszertervet és a Funkcionális Specifikációt, továbbá POC fejlesztése.
 - 2021.09.27. - 2021.10.03. Google Maps API implementálás.
 
-- 2021.10.04. - 2021.10.10. ~~TODO~~
+- 2021.10.04. - 2021.10.10. Projekt bemutatása
 ...
 - 2021.12.06. Projekt véglegesítése, befejezése.
 
@@ -49,7 +48,6 @@ Csapattagok:
 	 - A felhasználó útitervet is készíthet a kiválasztott bolthoz
 - **Nem funkcionális követelmények:**
 	- Igényes UI
-	- Firebase által kínált lehetőségek minél nagyobb kihasználása
 
 ## Fizikai környezet
 
@@ -58,7 +56,6 @@ Csapattagok:
 	 - Visual Studio Code
 	 - git
 	 - Trello
-	 - Firebase
 
 ## Technology Stack
 
@@ -69,8 +66,3 @@ Csapattagok:
 	- Google Maps API
 	
 Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi igényes webalkalmazás készítésekor, ezért választottuk őket. A Google Maps API segítségével tudjuk megvalósítani a bevásárlólistánk fő funkcionalitását, a listára felvett elemek beszerzési helyét megjelenítő térképet.
-
-- **Backend**:
-	- Firebase
-	
-A Google FireBase rendkívül sok kényelmi funkcióval rendelkezik, melyek megkönnyítik a fejlesztést. Ilyenek például a kényelmes user autentikáció, az egyszerű backend karbantartás, különböző biztonsági megoldások és a valós időben frissülő adatbázis és console monitoring.
