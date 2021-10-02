@@ -18,3 +18,7 @@ body, html {
   height: 100%;
 }
 
+#mapSettingButton {
+  width: 250px;
+  margin: 10px;
+}
