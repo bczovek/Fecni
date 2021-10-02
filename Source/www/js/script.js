@@ -1,6 +1,36 @@
 let lists = [];
 
-let categories = ["Élelmiszer", "Elektronika", "Stb", "Dohánytermék"];
+let categories = [{
+    name: "Élelmiszer",
+    type: "grocery"
+},
+{
+    name: "Pékáru",
+    type: "bakery"
+},
+{
+    name: "Elektronika",
+    type: "electronics_store"
+},
+{
+    name: "Szeszes ital",
+    type: "liquor_store"
+},
+{
+    name: "Gyógyszer",
+    type: "pharmacy"
+},
+{
+    name: "Ruha",
+    type: "clothing_store"
+},
+{
+    name: "Cipő",
+    type: "shoe_store"
+}
+];
+
+//"Élelmiszer", "Elektronika", "Stb", "Dohánytermék"
 
 function displayLists(){
 
@@ -8,7 +38,7 @@ function displayLists(){
 
     for(let i=0; i<lists.length; i++){
         $('#lists').append(`<div class="col-sm-6">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem; margin-bottom:2%">
             <div class="card-header">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control bg-light listname" id="name`+ i +`" value="`+lists[i].name+`">
@@ -19,7 +49,7 @@ function displayLists(){
             </div>
             <div class="card-body" id="list`+ i +`">
             </div>
-            <a href="#" id="map`+ i +`" class="btn btn-success mapButton">Térkép</a>
+            <a href="#map" id="map`+ i +`" class="btn btn-success mapButton">Térkép</a>
             <a href="#" id="save`+ i +`" class="btn btn-success saveButton">Mentés</a>
         </div>
     </div>`);
@@ -38,10 +68,10 @@ function displayLists(){
             </div>`);
 
             for(let k=0; k<categories.length; k++){
-                $('#'+i+'-'+j).append('<option value="'+ k +'" >'+ categories[k] +'</option>');
+                $('#'+i+'-'+j).append('<option value="'+ categories[k].type +'" >'+ categories[k].name +'</option>');
             }
 
-            $('#'+i+'-'+j+' option[value='+ lists[i].items[j].category +']').attr('selected', 'selected');
+            $('#'+i+'-'+j+' option[value='+ lists[i].items[j].type +']').attr('selected', 'selected');
         }
     }
 }
@@ -60,7 +90,7 @@ $(document).on('change', 'select', function(){
     let i = parseInt(this.id.split('-')[0]);
     let j = parseInt(this.id.split('-')[1]);
 
-    lists[i].items[j].category = this.value;
+    lists[i].items[j].type = this.value;
 })
 
 $(document).on('change', '.listname', function(){
@@ -83,7 +113,7 @@ $(document).on('click', '.add', function(){
 
     lists[id].items.push({
         name: "",
-        category: 0
+        type: "supermarket"
     });
 
     displayLists();
@@ -105,4 +135,27 @@ $(document).on('click', '.removeItem', function(){
     lists[i].items.splice(j,1);
 
     displayLists();
-})
+});
+
+$(document).on('click', '.mapButton', function(){
+
+    const i = parseInt(this.id.slice(-1));
+    const types = getTypes(lists[i].items.map(e => e.type));
+    const range = $('#mapRange').val();
+    const openNow = $('#openNow').is(":checked");
+
+    searchShops(types,range,openNow);
+});
+
+function getTypes(types){
+
+    let result = [];
+
+    types.forEach(element => {
+        if(!result.includes(element)){
+            result.push(element);
+        }
+    });
+
+    return result;
+}

@@ -30,20 +30,39 @@
         </div>
       </nav>
     <div class="row" id="lists">
-        
+
     </div>
 
     <div id="map">
     </div>
-    <div id="settings">
-      <label for="mapRange" class="form-label">Távolság</label>
-      <input type="range" class="form-range" min="1" max="5" id="mapRange">
-      <label for="priceRange" class="form-label">Árkategória</label>
-      <input type="range" class="form-range" min="1" max="5" id="priceRange">
-    </div>
 
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap">
-    </script>
+    <div class="accordion accordion-flush" id="settings">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Térkép beállítása
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Távolság (km)</span>
+              </div>
+              <input type="text" name="mapRange" id="mapRange" class="form-control" value="2" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="openNow">
+              <label class="form-check-label" for="openNow">
+                Csak nyitott boltokat jelenítsen meg
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP7bBZzPD3zv46KzDlXj4ItD8xIbarukA&libraries=places&callback=initMap">
+      </script>  
 </body>
 </html>

@@ -1,13 +1,19 @@
 #map {
-    height: 50%;
+    height: 90%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-html{
-  height: 100%;
+#lists{
+  margin-left: 2%;
 }
 
-body {
+#settings{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+body, html {
   height: 100%;
-  margin: 2%;
-  padding: 0;
 }
