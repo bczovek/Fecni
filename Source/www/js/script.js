@@ -54,8 +54,6 @@ let categories = [{
 }
 ];
 
-//"Élelmiszer", "Elektronika", "Stb", "Dohánytermék"
-
 function displayLists(){
 
     $('#lists').html('');
@@ -73,8 +71,7 @@ function displayLists(){
             </div>
             <div class="card-body" id="list`+ i +`">
             </div>
-            <a href="#map" id="map`+ i +`" class="btn btn-success mapButton" style="padding: 5px; margin: 5px;">Térkép</a>
-            <a href="#" id="save`+ i +`" class="btn btn-success saveButton" style="padding: 5px; margin: 5px;">Mentés</a>
+            <a href="#map" id="map`+ i +`" class="btn btn-success mapButton" style="padding: 5px; margin: 5px;">Megjelenítés térképen</a>
         </div>
     </div>`);
 
@@ -101,12 +98,17 @@ function displayLists(){
 }
 
 function newList(){
-    lists.push({
-        name: "",
-        items: []
-    });
+
+    if(lists.length < 6){
+        lists.push({
+            name: "",
+            items: []
+        });
 
     displayLists();
+    } else {
+        alert("Elérte a bevásárlólisták számának maximumát!");
+    }
 }
 
 $(document).on('change', 'select', function(){
