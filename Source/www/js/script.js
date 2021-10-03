@@ -170,11 +170,15 @@ $(document).on('click', '.removeItem', function(){
 $(document).on('click', '.mapButton', function(){
 
     const i = parseInt(this.id.slice(-1));
-    const types = getTypes(lists[i].items.map(e => e.type));
-    const range = $('#mapRange').val();
-    const openNow = $('#openNow').is(":checked");
+    if(lists.name !== "" && lists[i].items.every(e => e.name !== "")){
+        const types = getTypes(lists[i].items.map(e => e.type));
+        const range = $('#mapRange').val();
+        const openNow = $('#openNow').is(":checked");
 
-    searchShops(types,range,openNow);
+        searchShops(types,range,openNow);
+    } else {
+        alert("A megjelenítéshez adjon meg nevet a listának és minden elemének!");
+    }
 });
 
 function getTypes(types){
