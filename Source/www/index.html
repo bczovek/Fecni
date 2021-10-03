@@ -22,44 +22,40 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" onclick="return newList();">Új lista</a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
-    <div class="row" id="lists">
 
+    <div id="newListButton">
+      <button type="button" onclick="return newList();" class="btn btn-success">Új bevásárlólista</button>
+    </div>
+    <div class="row" id="lists">
+      <h4>Jelenleg nincs bevásárlólistája!</h4>
     </div>
 
     <div id="map">
     </div>
 
-    <div class="accordion accordion-flush" id="settings">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button id="mapSettingButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Térkép beállítása
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <div class="input-group input-group-sm mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Távolság (km)</span>
-              </div>
-              <input type="number" name="mapRange" id="mapRange" class="form-control" value="2" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="openNow">
-              <label class="form-check-label" for="openNow">
-                Csak nyitott boltokat jelenítsen meg
-              </label>
-            </div>
+    <div class="card" id="settings">
+      <div class="card-header">
+        Térkép beállítása
+      </div>
+      <div class="card-body">
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Távolság (km)</span>
           </div>
+          <input type="number" name="mapRange" id="mapRange" class="form-control" value="2" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="openNow">
+          <label class="form-check-label" for="openNow">
+            Csak nyitva lévő boltokat jelenítsen meg
+          </label>
         </div>
       </div>
+    </div>
 
       <script async
       src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&callback=initMap">

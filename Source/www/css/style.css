@@ -10,8 +10,11 @@
 }
 
 #settings{
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 0 2% 2% 2%;
+}
+
+#newListButton{
+  margin: 2%;
 }
 
 body, html {
