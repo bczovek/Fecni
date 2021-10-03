@@ -29,7 +29,6 @@ Csapattagok:
 - 2021.09.13. - 2021.09.19. Elkezdeni a Funkcionális Specifikációt és a Rendszertervet. POC elkezdése, esetleges befejezése.
 - 2021.09.20. - 2021.09.26. Befejezni a Rendszertervet és a Funkcionális Specifikációt, továbbá POC fejlesztése.
 - 2021.09.27. - 2021.10.03. Google Maps API implementálás.
-
 - 2021.10.04. - 2021.10.10. Projekt bemutatása
 ...
 - 2021.12.06. Projekt véglegesítése, befejezése.
@@ -70,3 +69,35 @@ Csapattagok:
 	- NodeJS
 	
 Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi igényes webalkalmazás készítésekor, ezért választottuk őket. A Google Maps API segítségével tudjuk megvalósítani a bevásárlólistánk fő funkcionalitását, a listára felvett elemek beszerzési helyét megjelenítő térképet.
+
+## Use case-ek
+
+- Az "új bevásrlólista" gomb megnyomására jelenjen a bevásárlólista létrehozó felület
+- Maximum 6 bevásárlólista jelenhet meg az oldalon
+- A maximum elérése után a felhasználót figyelmeztessük erre
+- A piros gomb megnyomására törölje ki a listát
+- Legyen lehetőség elnevezni a listát (nincs megkötés a karakterekre, vagy a hosszra)
+- A zöld "+" gomb megnyomásával hozzáadódik egy listaelem a listához
+- Egy lista maximum 15 listaelemet tartalmazhat
+- Ha 15-nél több listaelemet kíván a felhasználó felvinni, akkor figyelmeztessük
+- A listaelemhez tartozó piros gombra kattintva törölje ki az aktuális listaelemet
+- Legyen lehetőség elnevezni az adott terméket (nincs megkötés a használható karakterekre, vagy a hosszra)
+- Minden egyes termékhez legyen lehetőség kategóriát választani egy lenyíló listából
+- Termékkategóriák:
+	- Élelmiszer
+	- Pékáru
+	- Elektronika
+	- Szeszes ital
+	- Gyógyszer
+	- Ruha
+	- Cipő
+	- Könyv
+	- Háztartási cikk
+	- Drogéria és Illatszer
+	- Virág és Szobanövény
+	- Bútor
+	- Ékszer
+- A "Megjelenítés térképen" gombra kattintva frissüljön a beépített Google Maps, amely megjeleníti a felvett termékeket
+- Minden kategóriához eltérő ikonnal jelenjenek meg a termékeket forgalmazó boltok a térképen
+- Legyen lehetőség megszabni, hogy milyen hatósugárban jelenítse meg az elérhető boltokat a térkép (alapértelmezetten 2km, csak szám típusú karaktert lehessen felvinni)
+- Egy checkbox segítségével legyen lehetőség bejelölni, hogy csak az aktuálisan nyitvatartó boltokat jelenítse meg a térkép
