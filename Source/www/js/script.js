@@ -135,14 +135,18 @@ $(document).on('change', '.itemname', function(){
 })
 
 $(document).on('click', '.add', function(){
-    let id = this.id;
+    let i = this.id;
 
-    lists[id].items.push({
-        name: "",
-        type: "supermarket"
-    });
+    if(lists[i].items.length < 16){
+        lists[i].items.push({
+            name: "",
+            type: "supermarket"
+        });
 
-    displayLists();
+        displayLists();
+    } else {
+        alert(`Elérte a tételek számának maximumát ezen a listán: ${lists[i].name}`);
+    }
 });
 
 $(document).on('click', '.remove', function(){
