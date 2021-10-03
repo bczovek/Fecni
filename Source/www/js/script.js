@@ -2,7 +2,7 @@ let lists = [];
 
 let categories = [{
     name: "Élelmiszer",
-    type: "grocery"
+    type: "supermarket"
 },
 {
     name: "Pékáru",

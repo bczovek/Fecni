@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+
 #map {
     height: 90%;
     margin-top: 2%;
@@ -24,4 +26,8 @@ body, html {
 #mapSettingButton {
   width: 250px;
   margin: 10px;
+}
+
+.navbar-brand {
+  font-family: 'Gluten', cursive;
 }
