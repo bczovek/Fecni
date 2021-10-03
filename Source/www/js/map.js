@@ -3,7 +3,9 @@ let pos;
 let markers = [];
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"),
+    {
+    center: { lat: -34.397, lng: 150.644 },
     zoom: 15,
   });
 }
@@ -24,15 +26,24 @@ $(document).ready(function() {
         position: pos,
         map: map,
       })
+      console.log(map.getCenter().lat());
     },
     () => {
-      console.log("Failed");
+      handleLocationError();
     });
   } else {
-    console.log("No support");
+    handleLocationError();
   }
 
 });
+
+function handleLocationError(){
+  const errorWindow = new google.maps.InfoWindow();
+
+  errorWindow.setPosition(map.getCenter());
+  errorWindow.setContent("<h4>Helymeghatározás sikertelen!</h4>");
+  errorWindow.open(map);
+}
 
 function searchShops(types, range, openNow){
 

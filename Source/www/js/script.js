@@ -173,7 +173,7 @@ $(document).on('click', '.removeItem', function(){
 $(document).on('click', '.mapButton', function(){
 
     const i = parseInt(this.id.slice(-1));
-    if(lists.name !== "" && lists[i].items.every(e => e.name !== "")){
+    if(lists[i].name !== "" && lists[i].items.every(e => e.name !== "")){
         const types = getTypes(lists[i].items.map(e => e.type));
         const range = $('#mapRange').val();
         const openNow = $('#openNow').is(":checked");
