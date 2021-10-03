@@ -19,9 +19,10 @@ Csapattagok:
 | K1  | Bevásárlólista | A felhasználó tudjon akár több bevásárlólistát létrehozni, törölni, módosítani.|
 | K2 | Listaelem | Lehetőséget kell biztosítani a felhasználónak, hogy valamennyi elemet rögzíteni tudjon az adott bevásárlólistán. Ezeknek nevet, kategóriát tudjon beállítani, kihúzni |
 | K3 | Térkép | Interaktív térképen megjeleníthető legyen egy adott bevásárlólista elemei hol kaphatók. Az üzletek kijelölése a listaelem kategória alapján történjen. |
-| K4 | Térkép paraméterezése | A felhasználó beállíthatja milyen távolságra lévő boltokat keres. Továbbá nyitvatartás és árkategória szerint szűrheti azokat. |
+| K4 | Térkép paraméterezése | A felhasználó beállíthatja milyen távolságra lévő boltokat keres. Továbbá nyitvatartás szerint szűrheti azokat. |
 | K5 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
 | K6 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
+| K7 | Windows alkalmazás | A projektnek a webes felülettel megegyező Windows asztali alkalmazással kell rendelkeznie |
 
 ## Ütemterv
 - 2021.09.06. - 2021.09.12. Elkezdeni és befejezni a Követelmény Specifikációt.
@@ -43,9 +44,8 @@ Csapattagok:
 	 - Képes bevásárlólistát lezárni/törölni
 	 - Képes termékeket felvenni a listára, ezekhez kategóriát is tud rendelni
 	 - Beépített térképen láthatóak a felhasználó földrajzi helyéhez legközelebb eső boltok
-	 - A megjelenített boltok az áru kategóriájától függően frissülnek
 	 - A felhasználó beállíthatja, hogy milyen távolságra jelenjenek meg boltok a térképen
-	 - A felhasználó útitervet is készíthet a kiválasztott bolthoz
+	 - A felhasználó beállíthatja, hogy csak nyitva lévő boltok jelenjenek meg a térképen
 - **Nem funkcionális követelmények:**
 	- Igényes UI
 
@@ -61,8 +61,12 @@ Csapattagok:
 
 - **Frontend**:
 	- HTML
-	- CSS
-	- JavaScript
+	- CSS (Bootstrap)
+	- JavaScript, jQuery
 	- Google Maps API
+	- Apache Cordova
+
+- **Backend**:
+	- NodeJS
 	
 Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi igényes webalkalmazás készítésekor, ezért választottuk őket. A Google Maps API segítségével tudjuk megvalósítani a bevásárlólistánk fő funkcionalitását, a listára felvett elemek beszerzési helyét megjelenítő térképet.
