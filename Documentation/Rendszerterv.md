@@ -76,12 +76,12 @@ Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi i
 - Maximum 6 bevásárlólista jelenhet meg az oldalon
 - A maximum elérése után a felhasználót figyelmeztessük erre
 - A piros gomb megnyomására törölje ki a listát
-- Legyen lehetőség elnevezni a listát (nincs megkötés a karakterekre, vagy a hosszra)
+- Legyen lehetőség elnevezni a listát (nincs megkötés a karakterekre, vagy a hosszra, kötelező a megadása)
 - A zöld "+" gomb megnyomásával hozzáadódik egy listaelem a listához
 - Egy lista maximum 15 listaelemet tartalmazhat
 - Ha 15-nél több listaelemet kíván a felhasználó felvinni, akkor figyelmeztessük
 - A listaelemhez tartozó piros gombra kattintva törölje ki az aktuális listaelemet
-- Legyen lehetőség elnevezni az adott terméket (nincs megkötés a használható karakterekre, vagy a hosszra)
+- Legyen lehetőség elnevezni az adott terméket (nincs megkötés a használható karakterekre, vagy a hosszra, kötelező a megadása)
 - Minden egyes termékhez legyen lehetőség kategóriát választani egy lenyíló listából
 - Termékkategóriák:
 	- Élelmiszer
