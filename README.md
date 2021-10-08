@@ -6,7 +6,7 @@ A fent említett tárgy számára létrehozott nyilvános repository.
 
 **Czövek Bence** - [GitHub](https://github.com/bczovek)
 
-**Duba Anita** - [GitHub](https://github.com/Manwio)
+**Duba Anita** - [GitHub](https://github.com/offJUSTME)
 
 **Szabó Dániel József** - [GitHub](https://github.com/RangerFoxy)
 
