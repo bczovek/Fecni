@@ -29,7 +29,8 @@ Csapattagok:
 - 2021.09.13. - 2021.09.19. Elkezdeni a Funkcionális Specifikációt és a Rendszertervet. POC elkezdése, esetleges befejezése.
 - 2021.09.20. - 2021.09.26. Befejezni a Rendszertervet és a Funkcionális Specifikációt, továbbá POC fejlesztése.
 - 2021.09.27. - 2021.10.03. Google Maps API implementálás.
-- 2021.10.04. - 2021.10.10. Projekt bemutatása
+- 2021.10.04. Projekt bemutatása - https://fecni.herokuapp.com/
+- 2021.10.04. - 2021.10.10. Projekt fejlesztési ötletek összeszedése (felhasználófelület biztosítása, adatok tárolása, stb.)
 ...
 - 2021.12.06. Projekt véglegesítése, befejezése.
 
