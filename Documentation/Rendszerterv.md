@@ -33,7 +33,7 @@ Csapattagok:
 - 2021.10.04. - 2021.10.10. Projekt fejlesztési ötletek összeszedése (felhasználófelület biztosítása, adatok tárolása, stb.)
 - 2021.10.11. - 2021.10.17. Funkcionális specifikáció és követelmény specifikáció befejezése
 - 2021.10.18. - 2021.10.24. Rendszerterv befejezése
-- 2021.10.25. - 2021.10.31.
+- 2021.10.25. - 2021.10.31. <-- Szülinapom🥳 
 - 2021.11.01. - 2021.11.07. SZAKMAI NAPOK
 - 2021.11.08. - 2021.11.14.
 - 2021.11.15. - 2021.11.21.
