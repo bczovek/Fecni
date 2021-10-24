@@ -31,7 +31,14 @@ Csapattagok:
 - 2021.09.27. - 2021.10.03. Google Maps API implementálás.
 - 2021.10.04. Projekt bemutatása - https://fecni.herokuapp.com/
 - 2021.10.04. - 2021.10.10. Projekt fejlesztési ötletek összeszedése (felhasználófelület biztosítása, adatok tárolása, stb.)
-...
+- 2021.10.11. - 2021.10.17. Funkcionális specifikáció és követelmény specifikáció befejezése
+- 2021.10.18. - 2021.10.24. Rendszerterv befejezése
+- 2021.10.25. - 2021.10.31.
+- 2021.11.01. - 2021.11.07. SZAKMAI NAPOK
+- 2021.11.08. - 2021.11.14.
+- 2021.11.15. - 2021.11.21.
+- 2021.11.22. - 2021.11.28.
+- 2021.11.29. - 2021.12.05.
 - 2021.12.06. Projekt véglegesítése, befejezése.
 
 ## Funkcionális terv
