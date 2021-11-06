@@ -23,14 +23,29 @@ Csapattagok:
 | K5 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
 | K6 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
 | K7 | Windows alkalmazás | A projektnek a webes felülettel megegyező Windows asztali alkalmazással kell rendelkeznie |
+| K8 | Regisztráció, bejelentkezés | Az alkalmazáshoz regisztráció, bejelentkező felület implementálása |
+| K9 | Vendég felhasználó | A regisztráció nélküli vendég felhasználók csak egy darab listát tudjanak készíteni |
+| K10 | Megosztás | Felhasználók közötti megosztás lehetőségének implementálása |
+| K11 | Közös csoportok | A felhasználók közös csoportokat tudnak létrehozni, így egy listát közösen szerkeszteni |
+| K12 | Térkép opciók | A térkép paraméterezési lehetőségeinek bővítése |
+| K13 | Adatbázis (NoSQL) | A listák adatbázisba mentése | 
+| K14 | Adatbázis (MySQL) | A felhasználók és adataik adatbázissal történő kezelése |
 
 ## Ütemterv
 - 2021.09.06. - 2021.09.12. Elkezdeni és befejezni a Követelmény Specifikációt.
 - 2021.09.13. - 2021.09.19. Elkezdeni a Funkcionális Specifikációt és a Rendszertervet. POC elkezdése, esetleges befejezése.
 - 2021.09.20. - 2021.09.26. Befejezni a Rendszertervet és a Funkcionális Specifikációt, továbbá POC fejlesztése.
 - 2021.09.27. - 2021.10.03. Google Maps API implementálás.
-- 2021.10.04. - 2021.10.10. Projekt bemutatása
-...
+- 2021.10.04. Projekt bemutatása - https://fecni.herokuapp.com/
+- 2021.10.04. - 2021.10.10. Projekt fejlesztési ötletek összeszedése (felhasználófelület biztosítása, adatok tárolása, stb.)
+- 2021.10.11. - 2021.10.17. Funkcionális specifikáció és követelmény specifikáció befejezése
+- 2021.10.18. - 2021.10.24. Rendszerterv befejezése
+- 2021.10.25. - 2021.10.31. <-- Szülinapom🥳 
+- 2021.11.01. - 2021.11.07. SZAKMAI NAPOK
+- 2021.11.08. - 2021.11.14.
+- 2021.11.15. - 2021.11.21.
+- 2021.11.22. - 2021.11.28.
+- 2021.11.29. - 2021.12.05.
 - 2021.12.06. Projekt véglegesítése, befejezése.
 
 ## Funkcionális terv
@@ -76,12 +91,12 @@ Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi i
 - Maximum 6 bevásárlólista jelenhet meg az oldalon
 - A maximum elérése után a felhasználót figyelmeztessük erre
 - A piros gomb megnyomására törölje ki a listát
-- Legyen lehetőség elnevezni a listát (nincs megkötés a karakterekre, vagy a hosszra)
+- Legyen lehetőség elnevezni a listát (nincs megkötés a karakterekre, vagy a hosszra, kötelező a megadása)
 - A zöld "+" gomb megnyomásával hozzáadódik egy listaelem a listához
 - Egy lista maximum 15 listaelemet tartalmazhat
 - Ha 15-nél több listaelemet kíván a felhasználó felvinni, akkor figyelmeztessük
 - A listaelemhez tartozó piros gombra kattintva törölje ki az aktuális listaelemet
-- Legyen lehetőség elnevezni az adott terméket (nincs megkötés a használható karakterekre, vagy a hosszra)
+- Legyen lehetőség elnevezni az adott terméket (nincs megkötés a használható karakterekre, vagy a hosszra, kötelező a megadása)
 - Minden egyes termékhez legyen lehetőség kategóriát választani egy lenyíló listából
 - Termékkategóriák:
 	- Élelmiszer

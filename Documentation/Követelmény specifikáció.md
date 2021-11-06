@@ -37,6 +37,7 @@ Digitális listák:
 -	Közeli boltok megjelenítése interaktív térképes nézetben
 -	Listaelemek szerkesztésének lehetősége
 -	Ingyenes hozzáférés
+-	Felhasználó kezelés
 
 # Követelmény lista
 
@@ -49,3 +50,10 @@ Digitális listák:
 | K5 | Helymeghatározás | A térkép helymeghatározást csak a felhasználó beleegyezésével alkalmazhat. Ezeket az adatokat nem tárolhatja az alkalmazás. |
 | K6 | Webböngésző támogatás | Az alkalmazásnak megfelelően kell működnie a legnépszerűbb modern webböngészőkben |
 | K7 | Windows alkalmazás | A projektnek a webes felülettel megegyező Windows asztali alkalmazással kell rendelkeznie |
+| K8 | Regisztráció, bejelentkezés | Az alkalmazáshoz regisztráció, bejelentkező felület implementálása |
+| K9 | Vendég felhasználó | A regisztráció nélküli vendég felhasználók csak egy darab listát tudjanak készíteni |
+| K10 | Megosztás | Felhasználók közötti megosztás lehetőségének implementálása |
+| K11 | Közös csoportok | A felhasználók közös csoportokat tudnak létrehozni, így egy listát közösen szerkeszteni |
+| K12 | Térkép opciók | A térkép paraméterezési lehetőségeinek bővítése |
+| K13 | Adatbázis (NoSQL) | A listák adatbázisba mentése | 
+| K14 | Adatbázis (MySQL) | A felhasználók és adataik adatbázissal történő kezelése |
