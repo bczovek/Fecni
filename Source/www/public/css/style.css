@@ -31,3 +31,16 @@ body, html {
 .navbar-brand {
   font-family: 'Gluten', cursive;
 }
+
+.user{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+}
+
+#userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
