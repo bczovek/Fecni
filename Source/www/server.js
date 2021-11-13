@@ -1,11 +1,10 @@
-const express = require('express');
-const path = require('path');
-require('dotenv').config();
-
+import database from './model/database.js';
+import express from 'express';
+import 'dotenv/config'
+import { auth } from 'express-openid-connect';
 
 const app = express();
 const port = process.env.PORT || 3000;
-const { auth } = require('express-openid-connect');
 
 const config = {
   authRequired: false,
@@ -20,11 +19,13 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 app.use(auth(config));
 app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
-
-app.get('/profile', (req, res) => {
-    res.send(req.oidc.isAuthenticated() ? req.oidc.user : 'Not logged in')
-})
+app.use((req, res, next) => {
+  req.database = database(process.env.REDIS_URL);
+  next();
+});
 
 app.get('/', function(req, res) {
     res.render("index", {
@@ -32,5 +33,29 @@ app.get('/', function(req, res) {
         user: req.oidc.user,
     })
   });
+
+app.post('/save', (req, res) => {
+  if(req.oidc.isAuthenticated()){
+    req.database.setLists(req.oidc.user.nickname, req.body.lists).then((message) => {
+      res.status(200).send(message);
+    }).catch((message) => {
+      res.status(500).send(message);
+    });
+  } else {
+    res.status(401).send("Unauthorized. Please login first.");
+  }
+});
+
+app.get('/lists', (req, res) => {
+  if(req.oidc.isAuthenticated()){
+    req.database.getLists(req.oidc.user.nickname).then((lists) => {
+      res.json(lists);
+    }).catch((message) => {
+      res.status(500).send(message);
+    });
+  } else {
+    res.status(401).send("Unauthorized. Please login first.");
+  }
+});
 
 app.listen(port);

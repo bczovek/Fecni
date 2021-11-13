@@ -15,8 +15,10 @@
   margin: 0 2% 2% 2%;
 }
 
-#newListButton{
+#buttons{
   margin: 2%;
+  display: flex;
+  justify-content: space-between;
 }
 
 body, html {

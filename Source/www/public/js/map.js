@@ -18,15 +18,12 @@ $(document).ready(function() {
         lat: position.coords.latitude,
         lng: position.coords.longitude,
       };
-      
-      console.log(pos);
-
+    
       map.setCenter(pos);
       const marker = new google.maps.Marker({
         position: pos,
         map: map,
       })
-      console.log(map.getCenter().lat());
     },
     () => {
       handleLocationError();
