@@ -116,3 +116,15 @@ Ezen technológiák elengedhetetlenek és megkerülhetetlenek egy 21. századi i
 - Minden kategóriához eltérő ikonnal jelenjenek meg a termékeket forgalmazó boltok a térképen
 - Legyen lehetőség megszabni, hogy milyen hatósugárban jelenítse meg az elérhető boltokat a térkép (alapértelmezetten 2km, csak szám típusú karaktert lehessen felvinni)
 - Egy checkbox segítségével legyen lehetőség bejelölni, hogy csak az aktuálisan nyitvatartó boltokat jelenítse meg a térkép
+
+
+## User Guide
+
+<img src="/Documentation/img/fecni_01.png">
+<img src="/Documentation/img/fecni_02.png">
+<img src="/Documentation/img/fecni_03.png">
+<img src="/Documentation/img/fecni_04.png">
+<img src="/Documentation/img/fecni_05.png">
+<img src="/Documentation/img/fecni_06.png">
+<img src="/Documentation/img/fecni_07v2.png">
+<img src="/Documentation/img/fecni_08.png">
