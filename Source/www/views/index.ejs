@@ -26,7 +26,7 @@
           <%if(user) {%>
         <div class="user">
           <div id="userInfo">
-            <img src="<%= user.picture %>" alt="" width="50" height="50">
+            <img src="<%= user.picture %>" alt="" width="50" height="50" id="userPic">
             <span><%= user.nickname %></span>
           </div>
           <a class="btn bg-light text-success" href="/logout/" role="button">Kijelentkezés</a>
