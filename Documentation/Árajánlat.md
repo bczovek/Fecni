@@ -12,7 +12,11 @@ Fejlesztők: 4 fő, hetente összesen 16 óra ráfordítás
 192 munkaóra összesen, ami tartalmazza a dokumentáció elkészítését, a szoftver fejlesztését, tesztelését és a design elkészítését
 
 ### Összesítés:
-|Megnevezés     |Egységár          |Mennyiség |Összesen                    |
+|Megnevezés     |Egységár (forint) |Mennyiség (óra) |Összesen (forint)     |
 |---------------|------------------|----------|----------------------------|
-| Munkadíj      |3000 Forint / óra |192 óra   |576 000 Forint (3,11db PS5) |
-|Innovációs díj |500.000 Forint    |-         |500 000 Forint (2,7db PS5)  |
+|Tervezés       |1500              | 8              |  12 000
+|Dokumentáció   |2500              | 16             |  40 000
+|Design         |3500              | 20             |  70 000
+|Fejlesztés     |4000              | 130            | 520 000
+|Tesztelés      |3000              | 20             |  60 000
+|               |                  |                | 702 000 (3,79 db PS5)
