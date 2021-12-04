@@ -2,6 +2,50 @@ let map;
 let pos;
 let markers = [];
 
+const iconBase = "https://fecni.herokuapp.com/img/";
+
+const icons = {
+  supermarket: {
+    icon: iconBase + "elelmiszer.png",
+  },
+  bakery: {
+    icon: iconBase + "pekseg.png",
+  },
+  electronics_store: {
+    icon: iconBase + "elektronika.png",
+  },
+  liquor_store: {
+    icon: iconBase + "szeszesital.png",
+  },
+  pharmacy: {
+    icon: iconBase + "gyogyszertar.png",
+  },
+  clothing_store: {
+    icon: iconBase + "ruha.png",
+  },
+  shoe_store: {
+    icon: iconBase + "cipo.png",
+  },
+  book_store: {
+    icon: iconBase + "konyv.png",
+  },
+  home_goods_store: {
+    icon: iconBase + "haztartasi.png",
+  },
+  drugstore: {
+    icon: iconBase + "drogeria.png",
+  },
+  florist: {
+    icon: iconBase + "virag.png",
+  },
+  furniture_store: {
+    icon: iconBase + "butor.png",
+  },
+  jewelry_store: {
+    icon: iconBase + "ekszer.png",
+  }
+};
+
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"),
     {
@@ -57,11 +101,11 @@ function searchShops(types, range, openNow){
     }, function(data){
 
       data.forEach(element => {
-        
+        console.log(element);
         const marker = new google.maps.Marker({
           position: new google.maps.LatLng(element.geometry.location.lat(),element.geometry.location.lng()),
           map: map,
-          icon: element.icon,
+          icon: icons[type].icon,
         });
         const infowindow = new google.maps.InfoWindow({
           content: "<h4>"+element.name+"</h4><br><h6>"+element.vicinity+"</h6>",
